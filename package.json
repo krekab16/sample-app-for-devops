@@ -6,16 +6,17 @@
   "scripts": {
     "test": "jest",
     "build": "echo 'Building the app'",
-    "lint": "eslint src/ --fix"
-  },
-  "author": "Kun Réka Bianka",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.21.1"
+    "lint": "eslint src/ --fix",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "eslint": "^9.15.0",
     "globals": "^15.12.0",
     "jest": "^27.5.1"
+  },
+  "author": "Kun Réka Bianka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }
