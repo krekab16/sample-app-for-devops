@@ -1,19 +1,21 @@
 {
   "name": "my-nodejs-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Beadando.",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "echo 'Building the app'",
+    "lint": "eslint src/ --fix"
   },
-  "author": "",
+  "author": "Kun Réka Bianka",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
     "eslint": "^9.15.0",
-    "globals": "^15.12.0"
+    "globals": "^15.12.0",
+    "jest": "^27.5.1"
   }
 }
