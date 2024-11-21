@@ -1,6 +1,6 @@
 const http = require('http');
 const url = require('url');
-const { getFibonacci } = require('./math');
+const { getFibonacci } = require('./app');
 
 const PORT = process.env.PORT || 3000;
 
