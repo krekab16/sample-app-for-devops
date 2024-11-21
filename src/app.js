@@ -4,19 +4,19 @@
  * @returns {number} The nth Fibonacci number.
  * @throws {Error} If the input is not a non-negative integer.
  */
-function fibonacci(n) {
+function getFibonacci(n) {
     if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) {
-        throw new Error('The argument must be a non-negative integer');
+      throw new Error('A paraméternek egy nem negatív egész számnak kell lennie.');
     }
-
+  
     if (n === 0) return 0;
     if (n === 1) return 1;
-
+  
     let a = 0, b = 1;
     for (let i = 2; i <= n; i++) {
-        [a, b] = [b, a + b];
+      [a, b] = [b, a + b];
     }
     return b;
-}
-
-module.exports = { fibonacci };
+  }
+  
+  module.exports = { getFibonacci };
