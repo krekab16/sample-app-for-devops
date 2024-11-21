@@ -1,4 +1,4 @@
-const { getFibonacci } = require('../src/math');
+const { getFibonacci } = require('../src/app');
 const http = require('http');
 const { createServer } = require('../src/index');
 
