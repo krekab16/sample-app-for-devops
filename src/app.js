@@ -6,7 +6,7 @@
  */
 function getFibonacci(n) {
     if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) {
-      throw new Error('A paraméternek egy nem negatív egész számnak kell lennie.');
+      throw new Error('The argument must be a non-negative integer.');
     }
   
     if (n === 0) return 0;
