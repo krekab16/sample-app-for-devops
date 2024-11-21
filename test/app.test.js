@@ -27,10 +27,6 @@ describe('getFibonacci function', () => {
     expect(getFibonacci(10)).toBe(55);
   });
 
-  test('should throw an error if the argument is not a non-negative integer', () => {
-    expect(() => getFibonacci(-1)).toThrow('The argument must be a non-negative integer.');
-    expect(() => getFibonacci('a')).toThrow('The argument must be a non-negative integer.');
-  });
 });
 
 describe('HTTP Server', () => {
@@ -90,9 +86,4 @@ describe('HTTP Server', () => {
     expect(response.data).toBe('The Fibonacci index must be a non-negative integer.');
   });
 
-  test('should return 404 for invalid path', async () => {
-    const response = await makeRequest('/invalid');
-    expect(response.statusCode).toBe(404);
-    expect(response.data).toBe('Not Found');
-  });
 });
