@@ -7,7 +7,7 @@ const register = new promClient.Registry();
 
 promClient.collectDefaultMetrics({
   register,
-  prefix: 'mathapp_'
+  prefix: 'fibonacciapp_'
 });
 
 const httpRequestDuration = new promClient.Histogram({
